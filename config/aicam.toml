@@ -1,0 +1,5 @@
+[general]
+device = "/dev/video0"
+confidence = 30 # 50
+output_dir = "./output"
+debug = true
