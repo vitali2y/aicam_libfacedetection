@@ -24,15 +24,19 @@ Based on `opencv` and `libfacedetection` libs
     - [3.2. Cross-building @ Odroid U3 (arm-linux-gnueabihf)](#32-cross-building--odroid-u3-arm-linux-gnueabihf)
     - [3.3. Deployment, configuring and running @ Odroid U3 (arm-linux-gnueabihf)](#33-deployment-configuring-and-running--odroid-u3-arm-linux-gnueabihf)
 
+
 ### 1. General
 
 TBD
 
+
 ### 2. OpenCV lib
+
 #### 2.1 Getting sources
 ```
 ➜  ✗ git clone --recursive https://github.com/opencv/opencv.git && cd ./opencv
 ```
+
 
 #### 2.2. Building @ Linux (x86_64)
 ```
@@ -42,6 +46,7 @@ TBD
 ➜  x86_64 git:(4.x) make install
 ```
 
+
 #### 2.3. Cross-building @ Odroid U3 (arm-linux-gnueabihf)
 
 TBD
@@ -50,6 +55,7 @@ TBD
 ### 3. aicam
 #### 3.1. Bilding and running @ Linux (x86_64)
 ```
+➜  ✗ git clone https://github.com/vitali2y/aicam_libfacedetection.git && cd aicam_libfacedetection
 ➜  aicam_libfacedetection git:(master) ✗ git clone --recursive https://github.com/vitali2y/libfacedetection-rs.git
 Cloning into 'libfacedetection-rs'...
 ~...~
@@ -67,9 +73,11 @@ Saving to ./aicam_20240225094529.jpg
 ~...~
 ```
 
+
 #### 3.2. Cross-building @ Odroid U3 (arm-linux-gnueabihf)
 
 TBD
+
 
 #### 3.3. Deployment, configuring and running @ Odroid U3 (arm-linux-gnueabihf)
 
