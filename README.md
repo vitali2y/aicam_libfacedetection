@@ -8,7 +8,7 @@
 
 ## aicam
 
-### Self-hosted on your tiny device an AI-based face detection app for video surveillance and notification
+### Self-hosted on your tiny device an AI Computer Vision-based face detection app for video surveillance and notification
 
 **Simple. Fast. Rust.**
 
@@ -34,9 +34,9 @@ Based on `opencv` and `libfacedetection` libs.
 
 ### 1. General
 
-This application performs face recognition (usually in motion detection) followed by notification you by uploading captured images to your `Telegram` group.
+This application performs face recognition (usually in motion detection) followed by notification you by uploading captured images to your `Telegram` group. You can run it on any self-hosted tiny device, like `Banana Pi M64` or `Raspberry Pi 4` as I do.
 
-**IMPORTANT:** please do not forget to configure both `token` and `channel` params under `telegram` section of your `config/aicam.toml` config file.
+**IMPORTANT:** please do not forget to configure [preliminary generated](https://core.telegram.org/bots#how-do-i-create-a-bot) both `token` and `channel` params under `telegram` section of your [config/aicam.toml](config/aicam.toml) config file.
 
 ### 2. OpenCV lib
 
