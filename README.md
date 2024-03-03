@@ -14,17 +14,20 @@ Based on `opencv` and `libfacedetection` libs
 
 <hr/>
 
-- [aicam](#aicam)
-  - [`AI`-based face detection app for video surveillance and notification](#ai-based-face-detection-app-for-video-surveillance-and-notification)
-  - [1. General](#1-general)
-  - [2. OpenCV lib](#2-opencv-lib)
-    - [2.1 Getting sources](#21-getting-sources)
-    - [2.2. Building @ Linux (x86\_64)](#22-building--linux-x86_64)
-    - [2.3. Cross-building @ Odroid U3 (arm-linux-gnueabihf)](#23-cross-building--odroid-u3-arm-linux-gnueabihf)
-  - [3. aicam](#3-aicam)
-    - [3.1. Building and running @ Linux (x86\_64)](#31-building-and-running--linux-x86_64)
-    - [3.2. Cross-building @ Odroid U3 (arm-linux-gnueabihf)](#32-cross-building--odroid-u3-arm-linux-gnueabihf)
-    - [3.3. Deployment, configuring and running @ Odroid U3 (arm-linux-gnueabihf)](#33-deployment-configuring-and-running--odroid-u3-arm-linux-gnueabihf)
+- [1. General](#1-general)
+- [2. OpenCV lib](#2-opencv-lib)
+  - [2.1 Getting sources](#21-getting-sources)
+  - [2.2. Building @ Linux (x86\_64)](#22-building--linux-x86_64)
+  - [2.3. Cross-compiling for Odroid U3](#23-cross-compiling-for-odroid-u3)
+  - [2.4. Cross-compiling for Banana Pi M64](#24-cross-compiling-for-banana-pi-m64)
+  - [2.5. Cross-compiling for Raspberry Pi 4](#25-cross-compiling-for-raspberry-pi-4)
+  - [2.6. Cross-compiling for Orange Pi Zero 2W](#26-cross-compiling-for-orange-pi-zero-2w)
+- [3. aicam](#3-aicam)
+  - [3.1. Building and running @ Linux (x86\_64)](#31-building-and-running--linux-x86_64)
+  - [3.2. Cross-compiling for Odroid U3](#32-cross-compiling-for-odroid-u3)
+  - [3.3. Cross-compiling for Banana Pi M64](#33-cross-compiling-for-banana-pi-m64)
+  - [3.4. Cross-compiling for Raspberry Pi 4](#34-cross-compiling-for-raspberry-pi-4)
+  - [3.5. Cross-compiling for Orange Pi Zero 2W](#35-cross-compiling-for-orange-pi-zero-2w)
 
 
 ### 1. General
@@ -50,7 +53,22 @@ This application performs face recognition (usually in motion detection) followe
 ```
 
 
-#### 2.3. Cross-building @ Odroid U3 (arm-linux-gnueabihf)
+#### 2.3. Cross-compiling for Odroid U3
+
+TBD
+
+
+#### 2.4. Cross-compiling for Banana Pi M64 
+
+TBD
+
+
+#### 2.5. Cross-compiling for Raspberry Pi 4
+
+TBD
+
+
+#### 2.6. Cross-compiling for Orange Pi Zero 2W
 
 TBD
 
@@ -89,11 +107,21 @@ AI face detection & notification app (opencv + libfacedetection)
 ```
 
 
-#### 3.2. Cross-building @ Odroid U3 (arm-linux-gnueabihf)
+#### 3.2. Cross-compiling for Odroid U3
 
 TBD
 
 
-#### 3.3. Deployment, configuring and running @ Odroid U3 (arm-linux-gnueabihf)
+#### 3.3. Cross-compiling for Banana Pi M64 
+
+TBD
+
+
+#### 3.4. Cross-compiling for Raspberry Pi 4
+
+TBD
+
+
+#### 3.5. Cross-compiling for Orange Pi Zero 2W
 
 TBD
