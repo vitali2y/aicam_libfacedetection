@@ -8,9 +8,11 @@
 
 ## aicam
 
-### `AI`-based face detection app for video surveillance and notification
+### Self-hosted on your tiny device an AI-based face detection app for video surveillance and notification
 
-Based on `opencv` and `libfacedetection` libs
+**Simple. Fast. Rust.**
+
+Based on `opencv` and `libfacedetection` libs.
 
 <hr/>
 
@@ -32,7 +34,7 @@ Based on `opencv` and `libfacedetection` libs
 
 ### 1. General
 
-This application performs face recognition (usually in motion detection) followed by notification by uploading captured images to your `Telegram` group.
+This application performs face recognition (usually in motion detection) followed by notification you by uploading captured images to your `Telegram` group.
 
 **IMPORTANT:** please do not forget to configure both `token` and `channel` params under `telegram` section of your `config/aicam.toml` config file.
 
