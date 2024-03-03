@@ -1,5 +1,10 @@
 [general]
 device = "/dev/video0"
-confidence = 30 # 50
+device_name = "Cam #1"
+confidence = 30
+post_frames_amount = 3
 output_dir = "./output"
-debug = true
+
+[telegram]
+token = "TT"
+channel = "CC"

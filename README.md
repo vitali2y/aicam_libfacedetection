@@ -14,6 +14,8 @@ Based on `opencv` and `libfacedetection` libs
 
 <hr/>
 
+- [aicam](#aicam)
+  - [`AI`-based face detection app for video surveillance and notification](#ai-based-face-detection-app-for-video-surveillance-and-notification)
   - [1. General](#1-general)
   - [2. OpenCV lib](#2-opencv-lib)
     - [2.1 Getting sources](#21-getting-sources)
@@ -27,8 +29,9 @@ Based on `opencv` and `libfacedetection` libs
 
 ### 1. General
 
-TBD
+This application performs face recognition (usually in motion detection) followed by notification by uploading captured images to your `Telegram` group.
 
+**IMPORTANT:** please do not forget to configure both `token` and `channel` params under `telegram` section of your `config/aicam.toml` config file.
 
 ### 2. OpenCV lib
 
@@ -61,16 +64,27 @@ TBD
 Cloning into 'libfacedetection-rs'...
 ~...~
 ➜  aicam_libfacedetection git:(master) ✗ export LD_LIBRARY_PATH=./dist/x86_64:$LD_LIBRARY_PATH
-➜  aicam_libfacedetection git:(master) ✗ mold -run cargo r  # or, just: cargo run
+➜  aicam_libfacedetection git:(master) ✗ RUST_LOG=debug mold -run cargo r  # or, just: RUST_LOG=debug cargo run
     Updating crates.io index
 ~...~
     Finished dev [unoptimized + debuginfo] target(s) in 25.70s
      Running `target/debug/aicam_libfacedetection`
-Available camera:
-    Width: 640
-    Height: 480
-Face: Face { confidence: 63, x: 390, y: 4, width: 231, height: 193, landmarks: [(472, 45), (555, 20), (534, 79), (511, 132), (579, 110)] }
-Saving to ./aicam_20240225094529.jpg
+aicam 0.1.0
+AI face detection & notification app (opencv + libfacedetection)
+[2024-03-03T13:50:53Z DEBUG aicam] camera /dev/video0 (640x480) is running...
+[2024-03-03T13:50:56Z DEBUG aicam] face: Face { confidence: 94, x: 220, y: 240, width: 262, height: 223, landmarks: [(271, 398), (378, 410), (296, 480), (269, 524), (360, 534)] }
+[2024-03-03T13:50:56Z DEBUG aicam] saving to ./output/aicam_20240303155056.jpg
+[2024-03-03T13:50:56Z DEBUG aicam::upload] uploading ./output/aicam_20240303155056.jpg
+[2024-03-03T13:50:56Z DEBUG reqwest::connect] starting new connection: https://api.telegram.org/
+[2024-03-03T13:50:57Z DEBUG aicam] saving to ./output/aicam_20240303155056.jpg
+[2024-03-03T13:50:57Z DEBUG aicam::upload] uploading ./output/aicam_20240303155056.jpg
+[2024-03-03T13:50:57Z DEBUG reqwest::connect] starting new connection: https://api.telegram.org/
+[2024-03-03T13:50:58Z DEBUG aicam] saving to ./output/aicam_20240303155057.jpg
+[2024-03-03T13:50:58Z DEBUG aicam::upload] uploading ./output/aicam_20240303155057.jpg
+[2024-03-03T13:50:58Z DEBUG reqwest::connect] starting new connection: https://api.telegram.org/
+[2024-03-03T13:51:00Z DEBUG aicam] saving to ./output/aicam_20240303155059.jpg
+[2024-03-03T13:51:00Z DEBUG aicam::upload] uploading ./output/aicam_20240303155059.jpg
+[2024-03-03T13:51:00Z DEBUG reqwest::connect] starting new connection: https://api.telegram.org/
 ~...~
 ```
 

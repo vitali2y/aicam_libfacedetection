@@ -16,3 +16,4 @@ pub static SETTINGS: Lazy<Settings> = Lazy::new(|| match Settings::new() {
 });
 
 pub mod settings;
+pub mod upload;

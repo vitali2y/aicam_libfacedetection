@@ -3,3 +3,4 @@
 /opencv
 /output
 Cargo.lock
+config/aicam.toml
